@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.linkContainer a {
+    padding: 0px 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 200;
+    font-size: 10;
+    position: sticky;
+}
+
+.linkContainer a:hover {
+    scale: 1.1;
+    font-weight: bolder;
+}
+
+.searchbarContainer {
+    padding: 0 10px;
+}

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputSearch {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove o contorno azul padrão */
+  }
+  
+  .inputSearch:focus {
+    border-color: #83838300; /* Adiciona uma borda azul ao focar */
+  }
+  
+  .iconSearch {
+    margin-left: -30px; /* Move o ícone para perto do campo */
+    color: #888;
+    cursor: pointer; /* Ícone clicável */
+  }
+  
