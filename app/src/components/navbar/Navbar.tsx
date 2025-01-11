@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import { createIcons, icons } from 'lucide';
+import { Link, useLocation } from 'react-router-dom';
 
 import './Navbar.css';
 
 import Searchbar from '../searchbar/Searchbar';
 
 function Navbar() {
+  const location = useLocation();
+
   useEffect(() => {
     // Inicializa os ícones do Lucide após o componente ser montado
     createIcons({ icons });
@@ -15,16 +18,16 @@ function Navbar() {
     <nav className="container">
       <div className="headContainer">
         <i data-lucide="circle-user-round" className="icon"></i>
-        {/* NOME DA PÁGINA */}
-        <h3 className="pagName">HOME</h3>
+        {/* Atualiza o nome da página dinamicamente com base na rota */}
+        <h3 className="pagName">{getPageName(location.pathname)}</h3>
       </div>
 
       <div className="linkContainer">
-        <a href="#" className="link">Home</a>
-        <a href="#" className="link">Cursos</a>
-        <a href="#" className="link">Sobre</a>
-        <a href="#" className="link">Fale Conosco</a>
-        <a href="#" className="link">Grade</a>
+        <Link to="/" className="link">Home</Link>
+        <Link to="/cursos" className="link">Cursos</Link>
+        <Link to="/sobre" className="link">Sobre</Link>
+        <Link to="/fale-com" className="link">Fale Conosco</Link>
+        <Link to="/grade" className="link">Grade</Link>
         <div className="searchbarContainer">
           {/* AQUI VAI A SEARCHBAR */}
           <Searchbar />
@@ -32,6 +35,19 @@ function Navbar() {
       </div>
     </nav>
   );
+}
+
+// Função para definir o nome da página com base no caminho da URL
+function getPageName(pathname: string) {
+  const pageNames: { [key: string]: string } = {
+    '/': 'Home',
+    '/cursos': 'Cursos',
+    '/sobre': 'Sobre',
+    '/fale-com': 'Fale Conosco',
+    '/grade': 'Grade',
+  };
+
+  return pageNames[pathname] || 'Página';
 }
 
 export default Navbar;
