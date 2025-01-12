@@ -1,0 +1,36 @@
+.review {
+    width: 260px;
+    height: 140px;
+    background-color: #f8f8f8;
+    padding: 5px;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.reviewOwner {
+    font-size: 15px;
+}
+
+.reviewHeader div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review:hover {
+    scale: 1.01;
+    z-index: inherit;
+}
