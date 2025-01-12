@@ -8,6 +8,9 @@ import EntreNoTime from './pages/entreNoTime/EntreNoTime';
 import FaleCom from './pages/faleCom/FaleCom';
 import Grade from './pages/grade/Grade';
 import Professor from './pages/professor/Professor';
+import Login from './pages/login/Login';
+import Registro from './pages/registro/Registro';
+
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
         <Route path="/fale-com" element={<FaleCom />} />
         <Route path="/grade" element={<Grade />} />
         <Route path="/professor/:id" element={<Professor />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
       </Routes>
     </Router>
   );
