@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function FaleCom() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Fale Conosco</h1>
-      </>
+      </Layout>
     );
   }
   

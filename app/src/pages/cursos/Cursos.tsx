@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function Cursos() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Cursos</h1>
-      </>
+      </Layout>
     );
   }
   

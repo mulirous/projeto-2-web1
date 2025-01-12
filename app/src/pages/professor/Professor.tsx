@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function Professor() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Professor</h1>
-      </>
+      </Layout>
     );
   }
   

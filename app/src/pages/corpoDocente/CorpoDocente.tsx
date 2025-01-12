@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function CorpoDocente() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Corpo Docente</h1>
-      </>
+      </Layout>
     );
   }
   

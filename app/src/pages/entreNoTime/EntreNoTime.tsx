@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function EntreNoTime() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Entre no time</h1>
-      </>
+      </Layout>
     );
   }
   

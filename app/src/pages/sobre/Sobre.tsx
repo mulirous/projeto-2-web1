@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function Sobre() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1> Sobre nós</h1>
-      </>
+      </Layout>
     );
   }
   

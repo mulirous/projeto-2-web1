@@ -1,11 +1,10 @@
-import Navbar from "../../components/navbar/Navbar";
+import Layout from "../../layout/Layout";
 
 export default function Grade() {
     return (
-      <>
-        <Navbar />
+      <Layout>
         <h1>Grade</h1>
-      </>
+      </Layout>
     );
   }
   
