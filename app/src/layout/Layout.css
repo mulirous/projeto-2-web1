@@ -1,0 +1,11 @@
+/* Faz o layout ocupar 100% da altura */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que o layout ocupe toda a altura da tela */
+  }
+  
+  .layout-main {
+    flex-grow: 1; /* Faz o conteúdo crescer e preencher o espaço */
+  }
+  
