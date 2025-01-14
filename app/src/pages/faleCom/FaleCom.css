@@ -50,3 +50,22 @@
     text-align: center;
 }
 
+.contactAsks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 100px;
+}
+
+.formButton {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 100px;
+    background-color: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000;
+}
