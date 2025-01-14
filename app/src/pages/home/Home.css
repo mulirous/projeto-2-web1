@@ -9,10 +9,11 @@
 
 .initialSearch {
     width: 100%;
-    height: 400px;
+    height: 711px;
     background-color: black;
     opacity: 60%;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     top: 0;
