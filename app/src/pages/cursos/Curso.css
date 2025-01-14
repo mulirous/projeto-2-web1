@@ -1,0 +1,47 @@
+.search {
+    border-bottom: 1px solid #f8f8f8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.searchBotao {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 100px;
+    background-color: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000;
+}
+
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f8f8f8;
+    padding: 20px;
+}
+
+.categoriesButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.categoriesButtons .inactive {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+  }
+  
+  .categoriesButtons .active {
+    opacity: 1;
+  }
+  
