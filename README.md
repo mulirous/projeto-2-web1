@@ -17,4 +17,4 @@ npm install
 npm run dev
 ````
 
-Assim, você irá executar o projeto na url <code>localhost:5173/<code>
+Assim, você irá executar o projeto localmente na url <code>localhost:5173/<code>
