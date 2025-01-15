@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Search } from "lucide-react"; // Importando o ícone
 
-import "./Serachbar.css"
-
 function Searchbar() {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -11,15 +9,15 @@ function Searchbar() {
   };
 
   return (
-    <div className="container">
+    <div className="flex items-center">
       <input
         type="text"
         placeholder="Pesquisar"
         value={searchTerm}
         onChange={handleInputChange}
-        className="inputSearch"
+        className="p-2 max-w-[300px] border border-gray-300 rounded-md focus:outline-none focus:border-gray-500"
       />
-      <Search className="iconSearch" /> {/* Ícone ao lado */}
+      <Search className="ml-[-30px] text-gray-500 cursor-pointer" />
     </div>
   );
 }

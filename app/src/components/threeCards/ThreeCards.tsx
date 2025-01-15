@@ -1,7 +1,5 @@
 import Card from "../card/Card";
 
-import "./ThreeCards.css";
-
 interface CardData {
   img: string;
   h1: string;
@@ -15,7 +13,7 @@ interface ThreeCardsProps {
 
 export default function ThreeCards({ cards }: ThreeCardsProps) {
   return (
-    <div className="containerCards">
+    <div className="flex gap-[30px] justify-center">
       {cards.map((card, index) => (
         <Card
           key={index}

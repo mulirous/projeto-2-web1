@@ -1,5 +1,4 @@
 import { Star } from 'lucide-react'; // Importa o ícone de estrela do lucide
-import "./Review.css"
 
 interface ReviewProps {
   imageSrc: string; // URL da imagem
@@ -9,19 +8,23 @@ interface ReviewProps {
 
 export default function Review({ imageSrc, paragraph, owner }: ReviewProps) {
   return (
-    <div className="review">
-      <div className="reviewHeader">
-        <div>
-            <img src={imageSrc} alt="Imagem do dono da avaliação" className="reviewImage" />
-            <p className="reviewOwner">{owner}</p>
+    <div className="w-[260px] h-[140px] bg-gray-100 p-2 hover:scale-105 transition-all">
+      <div className="flex justify-between items-center mb-2">
+        <div className="flex items-center">
+          <img
+            src={imageSrc}
+            alt="Imagem do dono da avaliação"
+            className="w-[32px] h-[32px] rounded-full object-cover mr-2"
+          />
+          <p className="text-sm">{owner}</p>
         </div>
-        <div className="reviewRating">
-        {[...Array(5)].map((_, index) => (
-          <Star key={index} size={20} color="#FFD700" fill="#FFD700"/> // Cor dourada para as estrelas
-        ))}
+        <div className="flex">
+          {[...Array(5)].map((_, index) => (
+            <Star key={index} size={20} color="#FFD700" fill="#FFD700" />
+          ))}
+        </div>
       </div>
-      </div>
-      <div className="reviewContent">
+      <div className="text-sm">
         <p>{paragraph}</p>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ThreeCards from "../threeCards/ThreeCards";
-import "./CarrosselCards.css";
 
 interface CardData {
   img: string;
@@ -25,13 +24,17 @@ export default function CarrosselCards({ cardGroups }: CarrosselCardsProps) {
   };
 
   return (
-    <div className="carrosselCards">
-      <div className="carrosselContent">
+    <div className="flex flex-col items-center justify-center relative py-5">
+      <div className="carrosselContent w-full flex justify-center">
         <ThreeCards cards={cardGroups[currentIndex]} />
       </div>
-      <div className="carrosselButtons">
-        <button onClick={handlePrev} className="carrosselButton prev">{"←"}</button>
-        <button onClick={handleNext} className="carrosselButton next">{"→"}</button>
+      <div className="carrosselButtons flex gap-2 sticky">
+        <button onClick={handlePrev} className="carrosselButton prev bg-black text-white py-1 px-3 rounded-md text-lg">
+          {"←"}
+        </button>
+        <button onClick={handleNext} className="carrosselButton next bg-black text-white py-1 px-3 rounded-md text-lg">
+          {"→"}
+        </button>
       </div>
     </div>
   );
