@@ -38,7 +38,7 @@ export default function Sobre() {
             <div className="about-image">
               <img
                 className="circle"
-                src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+                src="https://images.vexels.com/content/142890/preview/high-tech-rings-logo-4bfb8f.png"
                 alt="Logo da Instituição"
               />
             </div>
