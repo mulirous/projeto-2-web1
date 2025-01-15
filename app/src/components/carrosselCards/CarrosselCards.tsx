@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ThreeCards from "../threeCards/ThreeCards";
 import "./CarrosselCards.css";
 
-interface Card {
+interface CardData {
   img: string;
   h1: string;
   p: string;
@@ -10,39 +10,28 @@ interface Card {
 }
 
 interface CarrosselCardsProps {
-  sections: Card[][];
+  cardGroups: CardData[][]; // Um array de arrays, cada subarray representa um conjunto de cards
 }
 
-export default function CarrosselCards({ sections }: CarrosselCardsProps) {
-  const [currentSection, setCurrentSection] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentSection((prev) => (prev === 0 ? sections.length - 1 : prev - 1));
-  };
+export default function CarrosselCards({ cardGroups }: CarrosselCardsProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentSection((prev) => (prev === sections.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % cardGroups.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + cardGroups.length) % cardGroups.length);
   };
 
   return (
-    <div className="carrossel">
-      <div className="carrossel-container">
-        <button onClick={handlePrevious} className="carrossel-button">
-          &lt;
-        </button>
-        <ThreeCards cards={sections[currentSection]} />
-        <button onClick={handleNext} className="carrossel-button">
-          &gt;
-        </button>
+    <div className="carrosselCards">
+      <div className="carrosselContent">
+        <ThreeCards cards={cardGroups[currentIndex]} />
       </div>
-      <div className="carrossel-indicators">
-        {sections.map((_, index) => (
-          <span
-            key={index}
-            className={`indicator ${currentSection === index ? "active" : ""}`}
-            onClick={() => setCurrentSection(index)}
-          ></span>
-        ))}
+      <div className="carrosselButtons">
+        <button onClick={handlePrev} className="carrosselButton prev">{"←"}</button>
+        <button onClick={handleNext} className="carrosselButton next">{"→"}</button>
       </div>
     </div>
   );

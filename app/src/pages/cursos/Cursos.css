@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    height: 711px;
 }
 
 .searchBotao {
@@ -39,9 +40,19 @@
 .categoriesButtons .inactive {
     opacity: 0.4;
     transition: opacity 0.3s ease;
-  }
-  
-  .categoriesButtons .active {
+}
+
+.categoriesButtons .active {
     opacity: 1;
-  }
+}
+
+.carrossel h1 {
+    text-align: center;
+}
+
+.carrossel {
+    padding: 20px;
+}
+
+
   

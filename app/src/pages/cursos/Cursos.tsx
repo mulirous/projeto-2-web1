@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { categoriesCards } from "../../data/cursosData";
 
 import Layout from "../../layout/Layout";
 import Searchbar from "../../components/searchbar/Searchbar";
@@ -6,10 +7,10 @@ import Botao from "../../components/botao/Botao";
 import BotaoImg from "../../components/botaoImg/BotaoImg";
 import CarrosselCards from "../../components/carrosselCards/CarrosselCards";
 
-import "./Curso.css";
+import "./Cursos.css";
 
 export default function Cursos() {
-  const [selected, setSelected] = useState<number | null>(null);
+  const [currentSection, setSection] = useState<number>(1);
 
   const categories = [
     { id: 1, legenda: "Desenvolvimento Web" },
@@ -19,19 +20,6 @@ export default function Cursos() {
     { id: 5, legenda: "UI/UX Design" },
     { id: 6, legenda: "Soft Skill" },
   ];
-
-  const courses: Record<number, { img: string; h1: string; p: string; to: string }[]> = {
-    1: [
-      { img: "img1.jpg", h1: "Curso 1", p: "Descrição 1", to: "/curso/1" },
-      { img: "img2.jpg", h1: "Curso 2", p: "Descrição 2", to: "/curso/2" },
-      { img: "img3.jpg", h1: "Curso 3", p: "Descrição 3", to: "/curso/3" },
-    ],
-    2: [
-      { img: "img4.jpg", h1: "Curso 4", p: "Descrição 4", to: "/curso/4" },
-      { img: "img5.jpg", h1: "Curso 5", p: "Descrição 5", to: "/curso/5" },
-      { img: "img6.jpg", h1: "Curso 6", p: "Descrição 6", to: "/curso/6" },
-    ],
-  };
 
   return (
     <Layout>
@@ -52,15 +40,26 @@ export default function Cursos() {
               srcImg="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
               legenda={cat.legenda}
               numero={cat.id}
-              onClick={() => setSelected(cat.id)}
-              className={selected === cat.id ? "active" : "inactive"}
+              onClick={() => setSection(cat.id)}
+              className={currentSection === cat.id ? "active" : "inactive"}
             />
           ))}
         </div>
       </div>
-      {selected && courses[selected] && (
-        <CarrosselCards sections={[courses[selected]]} />
-      )}
+      <div className="carrossels">
+        <div className="carrossel One">
+          <h1>{categoriesCards[currentSection].title1}</h1>
+          <CarrosselCards cardGroups={categoriesCards[currentSection].group1} />
+        </div>
+        <div className="carrossel Two">
+          <h1>{categoriesCards[currentSection].title2}</h1>
+          <CarrosselCards cardGroups={categoriesCards[currentSection].group2} />
+        </div>
+        <div className="carrossel Three">
+          <h1>{categoriesCards[currentSection].title3}</h1>
+          <CarrosselCards cardGroups={categoriesCards[currentSection].group3} />
+        </div>
+      </div>
     </Layout>
   );
 }
