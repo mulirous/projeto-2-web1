@@ -5,30 +5,29 @@ import Card from "../../components/card/Card";
 import Article from "../../components/article/Article";
 import Review from "../../components/review/Review";
 
-import "./Home.css"
-
 export default function Home() {
     return (
         <Layout>
-            <div className="initialSearch">
-                <div className="initialSearchText">
-                    <h1>Vamos Aprender Algo Novo Hoje</h1>
+            <div className="flex flex-col items-center justify-center w-full h-[771px] bg-black opacity-60">
+                <div className="text-center text-gray-300 pt-[100px]">
+                    <h1 className="font-bold text-[50px]">Vamos Aprender Algo Novo Hoje</h1>
                     <p>Confira nossos mais diversos cursos para agregar conhecimento</p>
                 </div>
-                <div className="initialSearchInput">
+                <div className="pt-6">
                     <Searchbar />
                 </div>
-                <div className="initialSearchButtons">
-                    <Botao to="/login" className="loginButton">Entrar</Botao>
-                    <Botao to="/registro" className="registroButton">Registre-se</Botao>
+                <div className="mt-8 flex gap-8">
+                    <Botao to="/login" className="px-[100px] py-[12px] text-white border border-white rounded-lg font-bold">Entrar</Botao>
+                    <Botao to="/registro" className="px-[100px] py-[12px] text-white bg-black border border-white rounded-lg font-bold">Registre-se</Botao>
                 </div>
             </div> 
-            <div className="newCourses">
-                <div className="newCoursesHeader">
-                    <img src="https://e7.pngegg.com/pngimages/522/461/png-clipart-computer-icons-academic-certificate-certification-diploma-training-course-computer-program-academic-certificate-thumbnail.png" alt="ALGUMA IMAGEM COMUM" className="newCoursesImg" />
+
+            <div className="my-12 px-8 text-center">
+                <div className="flex items-center mb-10 pl-12">
+                    <img src="https://e7.pngegg.com/pngimages/522/461/png-clipart-computer-icons-academic-certificate-certification-diploma-training-course-computer-program-academic-certificate-thumbnail.png" alt="ALGUMA IMAGEM COMUM" className="w-[50px] h-[50px] mr-4 object-cover" />
                     <h1>Novos Cursos</h1>
                 </div>
-                <div className="newCoursesCards">
+                <div className="flex flex-wrap gap-5 justify-center">
                     <Card
                     imageSrc="https://idocode.com.br/wp-content/uploads/2021/07/pexels-luis-gomes-546819-scaled.jpg"
                     paragraph="Curso de Programação"
@@ -49,12 +48,13 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="newContent">
-                <div className="newContentHeader">
+            <div className="my-16">
+                <div className="flex justify-between items-center px-[170px] mb-8">
                 <h1>Conteúdo Recente</h1>
-                <img src="https://static.vecteezy.com/system/resources/previews/019/787/026/non_2x/fire-icon-on-transparent-background-free-png.png" alt="ALGUMA IMAGEM" className="newContentImg" />
+                <img src="https://static.vecteezy.com/system/resources/previews/019/787/026/non_2x/fire-icon-on-transparent-background-free-png.png" alt="ALGUMA IMAGEM" className="w-[180px] h-[180px] object-cover" />
+
                 </div>
-                <div className="newContentArticles">
+                <div className="flex justify-around px-[170px] mt-8">
                     <Article
                     imageSrc="https://www.unit.br/hs-fs/hubfs/Blog%20Unit%20(SEO)/moca-treinando-como-falar-bem-em-publico.jpg?width=800&height=533&name=moca-treinando-como-falar-bem-em-publico.jpg"
                     heading="Arte de Falar em Público"
@@ -75,12 +75,13 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="reviews">
-                    <div className="reviewsText">
-                        <h1>Reviews dos Estudantes</h1> 
-                    </div>
-                    <div className="reviewStudents">
-                        <Review 
+
+            <div className="max-h-[420px] px-[170px] py-16 flex flex-col items-center">
+                <div className="text-center mb-6">
+                    <h1>Reviews dos Estudantes</h1>
+                </div>
+                <div className="flex flex-wrap justify-between gap-5 w-full">
+                    <Review 
                         imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
                         owner="Davi Brito"
                         paragraph="Os instrutores são muito atenciosos e explicam os conceitos de forma clara e objetiva. Estou adorando os cursos e já vejo resultados no meu aprendizado."
@@ -101,8 +102,9 @@ export default function Home() {
                         paragraph="Plataforma incrível! os recursos interativos e o suporte da equipe fazem toda a diferença. Os cursos são muito completos e valem cada minuto investido."
                         />
                     </div>
+
                 </div>
+            </div>
         </Layout>
     );
-  }
-  
+}

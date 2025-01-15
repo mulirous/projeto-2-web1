@@ -2,33 +2,29 @@ import { useEffect } from 'react';
 import { createIcons, icons } from 'lucide';
 import { Link, useLocation } from 'react-router-dom';
 
-import './Navbar.css';
-
 import Searchbar from '../searchbar/Searchbar';
 
 function Navbar() {
   const location = useLocation();
 
   useEffect(() => {
-    // Inicializa os ícones do Lucide após o componente ser montado
     createIcons({ icons });
   }, []);
 
   return (
-    <nav className="container">
-      <div className="headContainer">
-        <i data-lucide="circle-user-round" className="icon"></i>
-        {/* Atualiza o nome da página dinamicamente com base na rota */}
-        <h3 className="pagName">{getPageName(location.pathname)}</h3>
+    <nav className="flex justify-between static top-0 w-full p-5">
+      <div className="flex items-center space-x-2">
+        <i data-lucide="circle-user-round" className="text-xl"></i>
+        <h3 className="px-2">{getPageName(location.pathname)}</h3>
       </div>
 
-      <div className="linkContainer">
-        <Link to="/" className="link">Home</Link>
-        <Link to="/cursos" className="link">Cursos</Link>
-        <Link to="/sobre" className="link">Sobre</Link>
-        <Link to="/fale-com" className="link">Fale Conosco</Link>
-        <Link to="/grade" className="link">Grade</Link>
-        <div className="searchbarContainer">
+      <div className="flex items-center space-x-5">
+        <Link to="/" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Home</Link>
+        <Link to="/cursos" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Cursos</Link>
+        <Link to="/sobre" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Sobre</Link>
+        <Link to="/fale-com" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Fale Conosco</Link>
+        <Link to="/grade" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Grade</Link>
+        <div className="px-2">
           {/* AQUI VAI A SEARCHBAR */}
           <Searchbar />
         </div>
