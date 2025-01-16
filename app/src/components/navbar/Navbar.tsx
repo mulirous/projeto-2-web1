@@ -28,8 +28,8 @@ function Navbar() {
         <Link to="/sobre" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Sobre</Link>
         <Link to="/fale-com" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Fale Conosco</Link>
         <Link to="/grade" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Grade</Link>
+        <Link to="/corpo-docente" className="text-black text-xs font-light hover:scale-110 hover:font-bold transition duration-200">Corpo Docente</Link>
         <div className="px-2">
-          {/* AQUI VAI A SEARCHBAR */}
           <Searchbar />
         </div>
       </div>
@@ -37,7 +37,6 @@ function Navbar() {
   );
 }
 
-// Função para definir o nome da página com base no caminho da URL
 function getPageName(pathname: string) {
   const pageNames: { [key: string]: string } = {
     '/': 'Home',
@@ -45,6 +44,7 @@ function getPageName(pathname: string) {
     '/sobre': 'Sobre',
     '/fale-com': 'Fale Conosco',
     '/grade': 'Grade',
+    '/corpo-docente': 'Corpo Docente',
   };
 
   return pageNames[pathname] || 'Página';

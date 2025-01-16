@@ -28,7 +28,7 @@ export default function CarrosselCards({ cardGroups }: CarrosselCardsProps) {
       <div className="carrosselContent w-full flex justify-center">
         <ThreeCards cards={cardGroups[currentIndex]} />
       </div>
-      <div className="carrosselButtons flex gap-2 sticky">
+      <div className="carrosselButtons flex gap-5 sticky">
         <button onClick={handlePrev} className="carrosselButton prev bg-black text-white py-1 px-3 rounded-md text-lg">
           {"←"}
         </button>

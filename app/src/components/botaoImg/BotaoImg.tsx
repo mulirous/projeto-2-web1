@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 interface BotaoImgProps {
   legenda: string;
   numero: number;
   srcImg: string;
   onClick: () => void;
   className?: string;
+  route: string;
 }
 
 export default function BotaoImg({
@@ -11,13 +14,14 @@ export default function BotaoImg({
   srcImg,
   onClick,
   className,
+  route
 }: BotaoImgProps) {
   return (
     <div className={`relative ${className}`} onClick={onClick}>
-      <button className="bg-white border-none hover:opacity-90">
-        <img src={srcImg} alt={legenda} className="w-[100px] h-[100px] object-cover" />
-        <p className="w-[100px] text-center">{legenda}</p>
-      </button>
+      <Link className="bg-white border-none hover:opacity-90 flex flex-col items-center" to={route}>
+        <img src={srcImg} alt={legenda} className="w-[100px] h-[100px] object-cover rounded-full" />
+        <p className="w-[150px] mt-5 text-center">{legenda}</p>
+      </Link>
     </div>
   );
 }

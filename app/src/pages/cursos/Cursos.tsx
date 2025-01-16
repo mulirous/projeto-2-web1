@@ -40,6 +40,7 @@ export default function Cursos() {
               legenda={cat.legenda}
               numero={cat.id}
               onClick={() => setSection(cat.id)}
+              route="#"
               className={currentSection === cat.id ? "opacity-100" : "opacity-40 transition-opacity duration-300 ease-in-out"}
             />
           ))}
