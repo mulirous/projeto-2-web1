@@ -18,7 +18,7 @@ export const founders = [
         "Lucas é o responsável pela tecnologia que impulsiona nossa plataforma, liderando o desenvolvimento e a implementação de soluções tecnológicas inovadoras. Seu trabalho incansável em aprimorar os sistemas que sustentam a nossa operação é essencial para manter a empresa na vanguarda do mercado. Com uma mente focada na transformação digital, Lucas garante que a tecnologia seja sempre um diferencial competitivo.",
     },
     {
-      name: "Fundador 3",
+      name: "Murilo Costa",
       role: "Lead Developer",
       image: MuriloImage,
       description:
