@@ -38,9 +38,9 @@ export default function FaleCom() {
       <div className="flex justify-between p-[60px_100px] border-t border-[#f8f8f8]">
         <div className="flex items-center gap-5">
           <img
-            src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            alt="ALGUMA IMAGEM"
-            className="w-[100px] h-[100px] rounded-full object-cover"
+            src="https://farolti.com.br/site/wp-content/uploads/2020/09/Sem-Título-1.png"
+            alt="suporte"
+            className="w-[100px] h-[100px] object-contain"
           />
           <div>
             <h1 className="font-bold text-[50px]">Suporte</h1>

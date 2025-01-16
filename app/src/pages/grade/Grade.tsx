@@ -1,6 +1,7 @@
 import Layout from "../../layout/Layout";
 import Article from "../../components/article/Article";
 import Input from "../../components/input/Input";
+import GraficoImage from "../../images/grafico.jpg"
 
 import { useState } from "react";
 import { Star } from 'lucide-react';
@@ -50,9 +51,9 @@ export default function Grade() {
             </p>
           </div>
           <img
-            className="mt-6 md:mt-0 w-full md:w-1/3 max-w-xs"
-            src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            alt="Imagem representativa"
+            className="w-[150px] h-[150px]"
+            src="https://cdn-icons-png.flaticon.com/512/4345/4345016.png"
+            alt="estudo"
           />
         </div>
 
@@ -60,36 +61,36 @@ export default function Grade() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-6xl">
           <Article
             heading="Fundamentos da Programação"
-            imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            owner="TechGuru"
-            ownerImage="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+            imageSrc="https://www.brasilcode.com.br/wp-content/uploads/2023/08/fundamentos-programacao.webp"
+            owner="Guilherme Kaio"
+            ownerImage="https://www.itausocial.org.br/wp-content/uploads/2023/06/Carlos-Abicalil-1024x553.png"
             paragraph="Aprendendo o básico de codificação e linguagens de programação"
             typeOne=""
             typeTwo=""
           />
           <Article
             heading="Ciência de Dados"
-            imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            owner="DataWhiz"
-            ownerImage="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+            imageSrc="https://ead.unimar.br/wp-content/uploads/2022/11/ciencias-de-dados.jpg"
+            owner="Pedro Falcão"
+            ownerImage="https://avatars.githubusercontent.com/u/22248342?v=4"
             paragraph="Mergulhando no mundo da análise de dados e do aprendizado de máquina"
             typeOne=""
             typeTwo=""
           />
           <Article
             heading="Marketing Digital"
-            imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            owner="MarketPro"
-            ownerImage="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+            imageSrc="https://midia.market/wp-content/uploads/2023/11/iStock-1443560890-1-1.jpg"
+            owner="Juliana Santos"
+            ownerImage="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/professora-lu-renascer.jpg?w=1200&h=900&crop=1"
             paragraph="Dominando estratégias e análise de marketing online"
             typeOne=""
             typeTwo=""
           />
           <Article
             heading="Machine Learning"
-            imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-            owner="Robots Science"
-            ownerImage="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+            imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJb_hBb-ZHBOG_5Ptwi4022rpmxnIz097okA&s"
+            owner="Arthur Henrique"
+            ownerImage="https://static.imasters.com.br/wp-content/uploads/2019/02/20112325/person05-300x300.jpg"
             paragraph="Aprofundando em Aprendizado de Máquina de maneira singular"
             typeOne=""
             typeTwo=""
@@ -100,7 +101,7 @@ export default function Grade() {
       <div className="py-12">
         <div className="text-center mb-12 bg-zinc-700 py-10 text-white flex justify-evenly">
           <div className="flex text-center gap-12">
-            <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+            <img src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-user-manual-book-gear-icon-png-image_4746018.png" alt="" className="object-cover h-16 w-16" />
             <div className="flex justify-start flex-col items-start gap-4">
               <h1 className="text-3xl font-bold">Tech Guide</h1>
               <div className="bg-gray-500 text-black font text-xs p-1 font-bold">
@@ -117,17 +118,17 @@ export default function Grade() {
             <h2 className="text-2xl font-bold mb-4 text-center" id="progress">Acompanhamento do progresso</h2>
             <div className="flex flex-col md:flex-row items-center justify-around space-y-6 md:space-y-0">
               <div className="flex flex-col items-center text-center">
-                <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+                <img src="https://cdn-icons-png.flaticon.com/512/7820/7820331.png" alt="" className="object-contain h-14 w-14" />
                 <h3 className="text-lg font-bold">15</h3>
                 <p className="text-sm text-gray-600">Tarefas concluídas</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2487068-tempo-gasto-em-compras-rgb-color-icon-vetor.jpg" alt="" className="object-cover h-16 w-16 rounded-full" />
                 <h3 className="text-lg font-bold">7 semanas</h3>
                 <p className="text-sm text-gray-600">Tempo gasto</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+                <img src={"https://cdn-icons-png.flaticon.com/512/1810/1810720.png"} alt="" className="object-contain h-14 w-14" />
                 <h3 className="text-lg font-bold">80%</h3>
                 <p className="text-sm text-gray-600">Progresso geral</p>
               </div>
@@ -136,9 +137,7 @@ export default function Grade() {
         </div>
         <div className="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-md mb-12">
           <h3 className="text-lg font-semibold mb-4">Progresso de estudo</h3>
-          <div className="h-64 bg-gray-200 flex items-center justify-center">
-            <p className="text-gray-500">Gráfico aqui</p>
-          </div>
+          <img src={GraficoImage} className="h-[390px] w-full flex items-center justify-center bg-contain bg-center"></img>
         </div>        
       </div>
 
@@ -146,19 +145,19 @@ export default function Grade() {
         <h3 className="text-xl font-bold text-center mb-6">Próximos cursos</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
-            <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+            <img src="https://dojo.bylearn.com.br/wp-content/uploads/2020/06/dojô-11.png" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Desenvolvimento Web</h4>
             <p className="text-gray-500">2 semanas</p>
           </div>
 
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
-            <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Q5JqUbVTpZfYnkIbTE4dOvT1G7dv1gEiPQ&s" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Marketing Digital</h4>
             <p className="text-gray-500">3 semanas</p>
           </div>
 
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
-            <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMNEgRAOZkBY2xGlLBr-CaPjJ72X2ZEZmXcw&s" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Machine Learning</h4>
             <p className="text-gray-500">4 semanas</p>
           </div>
