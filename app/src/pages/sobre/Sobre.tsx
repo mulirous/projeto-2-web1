@@ -16,7 +16,7 @@ export default function Sobre() {
               />
             </div>
             <div className="flex-1 text-left">
-              <h1 className="text-2xl font-bold mb-2">Nome da Instituição</h1>
+              <h1 className="text-2xl font-bold mb-2">Instituto Ada Lovelace</h1>
               <div className="flex gap-2 mb-4">
                 <span className="bg-gray-400 text-black px-2 py-1 text-xs rounded-full">Educação</span>
                 <span className="bg-gray-400 text-black px-2 py-1 text-xs rounded-full">Tecnologia</span>
