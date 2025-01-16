@@ -8,7 +8,7 @@ interface ReviewProps {
 
 export default function Review({ imageSrc, paragraph, owner }: ReviewProps) {
   return (
-    <div className="w-[260px] h-[140px] bg-gray-100 p-2 hover:scale-105 transition-all">
+    <div className="w-[260px] h-[auto] bg-gray-100 p-4 hover:scale-105 transition-all">
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center">
           <img
