@@ -8,23 +8,25 @@ import Review from "../../components/review/Review";
 export default function Home() {
     return (
         <Layout>
-            <div className="flex flex-col items-center justify-center w-full h-[771px] bg-black opacity-60">
-                <div className="text-center text-gray-300 pt-[100px]">
-                    <h1 className="font-bold text-[50px]">Vamos Aprender Algo Novo Hoje</h1>
-                    <p>Confira nossos mais diversos cursos para agregar conhecimento</p>
-                </div>
-                <div className="pt-6">
-                    <Searchbar />
-                </div>
-                <div className="mt-8 flex gap-8">
-                    <Botao to="/login" className="px-[100px] py-[12px] text-white border border-white rounded-lg font-bold">Entrar</Botao>
-                    <Botao to="/registro" className="px-[100px] py-[12px] text-white bg-black border border-white rounded-lg font-bold">Registre-se</Botao>
-                </div>
+            <div className="flex flex-col items-center justify-center w-full h-[771px] bg-[url('https://www.segs.com.br/media/k2/items/cache/34348bbbb981297ffed11a4cdbc6aa9a_XL.jpg')]">
+                <div className="flex flex-col items-center justify-center w-full h-full bg-black/65">
+                    <div className="text-center text-gray-300 pt-[100px]">
+                        <h1 className="font-bold text-[50px]">Vamos Aprender Algo Novo Hoje</h1>
+                        <p>Confira nossos mais diversos cursos para agregar conhecimento</p>
+                    </div>
+                    <div className="pt-6">
+                        <Searchbar />
+                    </div>
+                    <div className="mt-8 flex gap-8">
+                        <Botao to="/login" className="px-[100px] py-[12px] text-white border border-white rounded-lg font-bold">Entrar</Botao>
+                        <Botao to="/registro" className="px-[100px] py-[12px] text-white bg-black border border-white rounded-lg font-bold">Registre-se</Botao>
+                    </div>
+                    </div>
             </div> 
 
             <div className="my-12 px-8 text-center">
                 <div className="flex items-center mb-10 pl-12">
-                    <img src="https://e7.pngegg.com/pngimages/522/461/png-clipart-computer-icons-academic-certificate-certification-diploma-training-course-computer-program-academic-certificate-thumbnail.png" alt="ALGUMA IMAGEM COMUM" className="w-[50px] h-[50px] mr-4 object-cover" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/3478/3478115.png" alt="ALGUMA IMAGEM COMUM" className="w-[50px] h-[50px] mr-4 object-cover" />
                     <h1>Novos Cursos</h1>
                 </div>
                 <div className="flex flex-wrap gap-5 justify-center">
@@ -51,7 +53,7 @@ export default function Home() {
             <div className="my-16">
                 <div className="flex justify-between items-center px-[170px] mb-8">
                 <h1>Conteúdo Recente</h1>
-                <img src="https://static.vecteezy.com/system/resources/previews/019/787/026/non_2x/fire-icon-on-transparent-background-free-png.png" alt="ALGUMA IMAGEM" className="w-[180px] h-[180px] object-cover" />
+                <img src="https://static.vecteezy.com/system/resources/previews/019/787/026/non_2x/fire-icon-on-transparent-background-free-png.png" alt="ALGUMA IMAGEM" className="w-[50px] h-[50px] object-cover" />
 
                 </div>
                 <div className="flex justify-around px-[170px] mt-8">
