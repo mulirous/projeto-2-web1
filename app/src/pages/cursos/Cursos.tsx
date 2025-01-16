@@ -32,7 +32,7 @@ export default function Cursos() {
 
       <div className="flex flex-col items-center justify-center border border-[#f8f8f8] bg-white p-5">
         <h2 className="text-xl font-semibold mb-4 font-bold text-[40px]">Categorias</h2>
-        <div className="flex gap-5">
+        <div className="flex gap-12">
           {categories.map((cat) => (
             <BotaoImg
               key={cat.id}
