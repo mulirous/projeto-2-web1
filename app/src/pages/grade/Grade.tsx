@@ -145,21 +145,18 @@ export default function Grade() {
       <div className="py-8 border-t border-gray-100">
         <h3 className="text-xl font-bold text-center mb-6">Próximos cursos</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
-          {/* Curso 1 */}
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
             <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Desenvolvimento Web</h4>
             <p className="text-gray-500">2 semanas</p>
           </div>
 
-          {/* Curso 2 */}
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
             <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Marketing Digital</h4>
             <p className="text-gray-500">3 semanas</p>
           </div>
 
-          {/* Curso 3 */}
           <div className="bg-white p-6 shadow-md rounded-md flex flex-col items-center text-center">
             <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-16 w-16 rounded-full" />
             <h4 className="font-semibold text-lg">Machine Learning</h4>

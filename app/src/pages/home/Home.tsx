@@ -8,7 +8,7 @@ import Review from "../../components/review/Review";
 export default function Home() {
     return (
         <Layout>
-            <div className="flex flex-col items-center justify-center w-full h-[771px] bg-black opacity-60">
+            <div className="flex flex-col items-center justify-center w-full h-[771px] bg-black opacity-60 gap-10">
                 <div className="text-center text-gray-300 pt-[100px]">
                     <h1 className="font-bold text-[50px]">Vamos Aprender Algo Novo Hoje</h1>
                     <p>Confira nossos mais diversos cursos para agregar conhecimento</p>

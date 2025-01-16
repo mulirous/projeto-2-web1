@@ -21,7 +21,7 @@ export default function Cursos() {
 
   return (
     <Layout>
-      <div className="border-t border-[#f8f8f8] bg-white flex flex-col items-center justify-center p-5 h-[711px]">
+      <div className="border-t border-[#f8f8f8] bg-white flex flex-col items-center justify-center p-5 h-[711px] gap-10">
         <h1 className="font-bold text-[50px]">Explore Cursos</h1>
         <p>Descubra diversos cursos inimagináveis categorias</p>
         <Searchbar />
