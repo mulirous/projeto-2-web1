@@ -14,7 +14,11 @@ function Navbar() {
   return (
     <nav className="flex justify-between static top-0 w-full p-5">
       <div className="flex items-center space-x-2">
-        <i data-lucide="circle-user-round" className="text-xl"></i>
+        <img
+          className="w-10 h-10 rounded-full object-cover"
+          src="https://images.vexels.com/content/142890/preview/high-tech-rings-logo-4bfb8f.png"
+          alt="Logo da Instituição"
+        />
         <h3 className="px-2">{getPageName(location.pathname)}</h3>
       </div>
 
