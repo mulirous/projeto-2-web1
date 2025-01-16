@@ -82,27 +82,25 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap justify-between gap-5 w-full">
                     <Review 
-                        imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
-                        owner="Davi Brito"
-                        paragraph="Os instrutores são muito atenciosos e explicam os conceitos de forma clara e objetiva. Estou adorando os cursos e já vejo resultados no meu aprendizado."
-                        />
-                        <Review 
-                        imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQw7o3gAe_kpg-141T85YmA_8Zm_DxEB_YkQ&s"
-                        owner="Alice Papera"
-                        paragraph="Cada módulo é detalhado e fácil de seguir, com exemplos práticos que ajudam a fixar o conteúdo. Estou muito satisfeito com o material oferecido."
-                        />
-                        <Review 
-                        imageSrc="https://avatarfiles.alphacoders.com/108/thumb-1920-108839.gif"
-                        owner="Pedro Paulo"
-                        paragraph="Os cursos são bem estruturados e oferecem material de alta qualidade, facilitando o aprendizado. Super recomendo para quem quer aprender de forma prática e eficaz!"
-                        />
-                        <Review 
-                        imageSrc="https://assets.propmark.com.br/uploads/2022/02/WhatsApp-Image-2022-02-18-at-08.52.06.jpeg"
-                        owner="Yasmin Teixeira"
-                        paragraph="Plataforma incrível! os recursos interativos e o suporte da equipe fazem toda a diferença. Os cursos são muito completos e valem cada minuto investido."
-                        />
-                    </div>
-
+                    imageSrc="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+                    owner="Davi Brito"
+                    paragraph="Os instrutores são muito atenciosos e explicam os conceitos de forma clara e objetiva. Estou adorando os cursos e já vejo resultados no meu aprendizado."
+                    />
+                    <Review 
+                    imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQw7o3gAe_kpg-141T85YmA_8Zm_DxEB_YkQ&s"
+                    owner="Alice Papera"
+                    paragraph="Cada módulo é detalhado e fácil de seguir, com exemplos práticos que ajudam a fixar o conteúdo. Estou muito satisfeito com o material oferecido."
+                    />
+                    <Review 
+                    imageSrc="https://avatarfiles.alphacoders.com/108/thumb-1920-108839.gif"
+                    owner="Pedro Paulo"
+                    paragraph="Os cursos são bem estruturados e oferecem material de alta qualidade, facilitando o aprendizado. Super recomendo para quem quer aprender de forma prática e eficaz!"
+                    />
+                    <Review 
+                    imageSrc="https://assets.propmark.com.br/uploads/2022/02/WhatsApp-Image-2022-02-18-at-08.52.06.jpeg"
+                    owner="Yasmin Teixeira"
+                    paragraph="Plataforma incrível! os recursos interativos e o suporte da equipe fazem toda a diferença. Os cursos são muito completos e valem cada minuto investido."
+                    />
                 </div>
             </div>
         </Layout>

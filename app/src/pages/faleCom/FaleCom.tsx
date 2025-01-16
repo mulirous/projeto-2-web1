@@ -3,8 +3,6 @@ import Layout from "../../layout/Layout";
 import Botao from "../../components/botao/Botao";
 import Input from "../../components/input/Input";
 
-import "./FaleCom.css";
-
 export default function FaleCom() {
   const [formData, setFormData] = useState({
     nome: "",
@@ -37,29 +35,30 @@ export default function FaleCom() {
 
   return (
     <Layout>
-      <div className="contactNumbers">
-        <div className="contactNumbersText">
+      <div className="flex justify-between p-[60px_100px] border-t border-[#f8f8f8]">
+        <div className="flex items-center gap-5">
           <img
             src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
             alt="ALGUMA IMAGEM"
-            className="contactNumbersTextImg"
+            className="w-[100px] h-[100px] rounded-full object-cover"
           />
-          <div className="contactNumebrTextInfos">
-            <h1>Suporte</h1>
+          <div>
+            <h1 className="font-bold text-[50px]">Suporte</h1>
             <p>Algum questionamento ou precisa de assistência? Venha até nós!</p>
           </div>
         </div>
-        <div className="contactNumbersButtons">
-          <Botao to="/fale-com" className="callButton">Ligar</Botao>
-          <Botao to="/fale-com" className="textButton">Enviar Mensagem</Botao>
+        <div className="flex flex-col gap-2 pl-2">
+          <Botao to="/fale-com" className="px-[100px] py-[12px] text-black border border-black rounded-lg font-bold text-center">Ligar</Botao>
+          <Botao to="/fale-com" className="px-[100px] py-[12px] text-white bg-black border border-white rounded-lg font-bold text-center">Enviar Mensagem</Botao>
         </div>
       </div>
-      <div className="contactAsks">
-        <div className="contacAsksText">
-          <h1>Nos Mande uma Mensagem</h1>
+
+      <div className="flex justify-between p-[60px_100px]">
+        <div>
+          <h1 className="font-bold text-[50px]">Nos Mande uma Mensagem</h1>
           <p>Preencha o formulário abaixo para entrar em contato conosco</p>
         </div>
-        <div className="contactAsksForm">
+        <div>
           <form onSubmit={handleSubmit}>
             <Input
               label="Nome"
@@ -93,12 +92,12 @@ export default function FaleCom() {
               value={formData.mensagem}
               onChange={handleChange}
             />
-            <button type="submit" className="formButton">
+            <button type="submit" className="mt-5 px-[100px] py-[12px] text-white bg-black border border-black rounded-lg font-bold text-center">
               Enviar
             </button>
           </form>
           {mensagemEnviada && (
-            <span className="mensagemSucesso">Mensagem enviada com sucesso!</span>
+            <span className="text-green-500 mt-3 block text-center">Mensagem enviada com sucesso!</span>
           )}
         </div>
       </div>
