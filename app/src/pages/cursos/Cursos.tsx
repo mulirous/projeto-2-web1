@@ -11,17 +11,17 @@ export default function Cursos() {
   const [currentSection, setSection] = useState<number>(1);
 
   const categories = [
-    { id: 1, legenda: "Frontend" },
-    { id: 2, legenda: "Data Science" },
-    { id: 3, legenda: "DevOps" },
-    { id: 4, legenda: "Backend" },
-    { id: 5, legenda: "UI/UX Design" },
-    { id: 6, legenda: "Soft Skill" },
+    { id: 1, legenda: "Frontend" , srcImg: "https://img.icons8.com/?size=160&id=dhecLjnptiQg&format=png"},
+    { id: 2, legenda: "Data Science" , srcImg: "https://cdn-icons-png.flaticon.com/512/4824/4824797.png"},
+    { id: 3, legenda: "DevOps" , srcImg: "https://images.seeklogo.com/logo-png/42/1/devops-logo-png_seeklogo-423085.png"},
+    { id: 4, legenda: "Backend" , srcImg: "https://cdn-icons-png.flaticon.com/512/2166/2166823.png"},
+    { id: 5, legenda: "UI/UX Design" , srcImg: "https://banner2.cleanpng.com/lnd/20240504/jli/avyxe12g2.webp"},
+    { id: 6, legenda: "Soft Skill" , srcImg: "https://cdn-icons-png.flaticon.com/512/9631/9631334.png"},
   ];
 
   return (
     <Layout>
-      <div className="border-t border-[#f8f8f8] bg-white flex flex-col items-center justify-center p-5 h-[711px]">
+      <div className="border-t border-[#f8f8f8] bg-white flex flex-col items-center justify-center p-5 h-[711px] gap-10">
         <h1 className="font-bold text-[50px]">Explore Cursos</h1>
         <p>Descubra diversos cursos inimagináveis categorias</p>
         <Searchbar />
@@ -36,7 +36,7 @@ export default function Cursos() {
           {categories.map((cat) => (
             <BotaoImg
               key={cat.id}
-              srcImg="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png"
+              srcImg={cat.srcImg}
               legenda={cat.legenda}
               numero={cat.id}
               onClick={() => setSection(cat.id)}

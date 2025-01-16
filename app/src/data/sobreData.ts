@@ -1,5 +1,6 @@
 import LucasImage from "../images/lucas.jpg";
 import PedroImage from "../images/pedro.jpg";
+import MuriloImage from "../images/murilo.jpg"
 
 export const founders = [
     {
@@ -17,9 +18,9 @@ export const founders = [
         "Lucas é o responsável pela tecnologia que impulsiona nossa plataforma, liderando o desenvolvimento e a implementação de soluções tecnológicas inovadoras. Seu trabalho incansável em aprimorar os sistemas que sustentam a nossa operação é essencial para manter a empresa na vanguarda do mercado. Com uma mente focada na transformação digital, Lucas garante que a tecnologia seja sempre um diferencial competitivo.",
     },
     {
-      name: "Fundador 3",
+      name: "Murilo Costa",
       role: "Lead Developer",
-      image: "https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png",
+      image: MuriloImage,
       description:
         "Murilo lidera a equipe de desenvolvimento, sendo o pilar que garante a excelência em cada linha de código. Sua atenção aos detalhes técnicos e seu compromisso com a inovação asseguram que todos os projetos sejam entregues com a mais alta qualidade. Murilo se dedica a aprimorar constantemente os processos, trazendo melhorias contínuas e mantendo o padrão de excelência que caracteriza nossa equipe.",
     },
