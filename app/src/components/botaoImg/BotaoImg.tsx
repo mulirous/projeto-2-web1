@@ -15,7 +15,7 @@ export default function BotaoImg({
   return (
     <div className={`relative ${className}`} onClick={onClick}>
       <button className="bg-white border-none hover:opacity-90">
-        <img src={srcImg} alt={legenda} className="w-[100px] h-[100px] rounded-full object-cover" />
+        <img src={srcImg} alt={legenda} className="w-[100px] h-[100px] object-cover" />
         <p className="w-[100px] text-center">{legenda}</p>
       </button>
     </div>
