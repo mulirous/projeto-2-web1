@@ -56,17 +56,17 @@ export default function EntreNoTime() {
           <h2 className="text-4xl font-bold mb-4 text-center" id="progress">Oportunidades agora!</h2>
           <div className="flex flex-col md:flex-row items-center justify-around space-y-6 md:space-y-0 py-20">
             <div className="flex flex-col items-center text-center gap-5">
-              <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-32 w-32 rounded-full" />
+              <img src="https://redaweb.com.br/uploads/posts/294/o-que-faz-um-gerente-de-marketing-digital.jpg" alt="" className="object-cover h-32 w-32 rounded-full" />
               <h3 className="text-2xl font-medium">Gerente de Marketing</h3>
               <p className="text-sm text-gray-600">Período Integral</p>
             </div>
             <div className="flex flex-col items-center text-center gap-5">
-              <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-32 w-32 rounded-full" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_MpFbPyQiSvfPwlvcgTet2mt9hcWmmryUPQ&s" alt="" className="object-cover h-32 w-32 rounded-full" />
               <h3 className="text-2xl font-medium">Engenheiro de Software</h3>
               <p className="text-sm text-gray-600">Remoto</p>
             </div>
             <div className="flex flex-col items-center text-center gap-5">
-              <img src="https://srzd.com/dashboard/wp-content/uploads/2024/04/calm.png" alt="" className="object-cover h-32 w-32 rounded-full" />
+              <img src="https://blog.academiain1.com.br/wp-content/uploads/2022/05/post_thumbnail-a22896c6d59a1e3142f66251c955a55f.jpeg" alt="" className="object-cover h-32 w-32 rounded-full" />
               <h3 className="text-2xl font-medium">Analista de Dados</h3>
               <p className="text-sm text-gray-600">Meio Período</p>
             </div>
@@ -124,8 +124,7 @@ export default function EntreNoTime() {
         </div>
       </div>
 
-      <div className="h-64 bg-gray-200 flex items-center justify-center">
-        <p className="text-gray-500">Imagem Aqui</p>
+      <div className="h-[390px] w-full bg-gray-200 flex items-center justify-center bg-[url('https://reflop.online/views/_sitepublico/img/trabalheconosco.jpg')] bg-cover">
       </div>
     </Layout>
   );
