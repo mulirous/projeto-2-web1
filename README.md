@@ -1,4 +1,4 @@
-# projeto-2-web1
+# Projeto de Web 1
 Projeto de prototipação (MVP) final disposta pela matéria Desenvolvimento Web 1
 
 
@@ -18,3 +18,10 @@ npm run dev
 ````
 
 Assim, você irá executar o projeto localmente na url <code>localhost:5173/<code>
+
+~
+
+## Tecnologias Utilizadas
+- React
+- Vite
+- Tailwind Css
