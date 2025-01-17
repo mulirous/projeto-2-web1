@@ -11,7 +11,7 @@ export default function CorpoDocente() {
         <p>Conheça agora seus mestres que vão te guiar na sua jornada!</p>
       </div>
 
-      <div className="space-y-8 p-5 bg-white">
+      <div className="space-y-8 p-5 bg-white border-t border-gray-100">
         <div className="justify-between">
           {Object.entries(professores).map(([key, prof]) => (
             <div key={key} className="py-10">
