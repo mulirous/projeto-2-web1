@@ -5,6 +5,7 @@ interface CardData {
   h1: string;
   p: string;
   to: string;
+  id: number | null;
 }
 
 interface ThreeCardsProps {
