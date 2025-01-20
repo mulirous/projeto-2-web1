@@ -99,7 +99,7 @@ export default function Grade() {
       </div>
 
       <div className="py-12">
-        <div className="text-center mb-12 bg-zinc-700 py-10 text-white flex justify-evenly">
+        <div className="text-center mb-12 bg-gray-800 py-10 text-white flex justify-evenly">
           <div className="flex text-center gap-12">
             <img src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-user-manual-book-gear-icon-png-image_4746018.png" alt="" className="object-cover h-16 w-16" />
             <div className="flex justify-start flex-col items-start gap-4">
@@ -135,6 +135,7 @@ export default function Grade() {
             </div>
           </div>
         </div>
+
         <div className="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-md mb-12">
           <h3 className="text-lg font-semibold mb-4">Progresso de estudo</h3>
           <img src={GraficoImage} className="h-[390px] w-full flex items-center justify-center bg-contain bg-center"></img>

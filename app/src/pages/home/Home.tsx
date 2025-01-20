@@ -36,19 +36,19 @@ export default function Home() {
                     imageSrc="https://idocode.com.br/wp-content/uploads/2021/07/pexels-luis-gomes-546819-scaled.jpg"
                     paragraph="Curso de Programação"
                     heading="Iniciante"
-                    to="/curso/:id"
+                    to="/professor/1"
                     />
                     <Card
                     imageSrc="https://cruzeirodosul.vtexassets.com/arquivos/ids/161141-800-auto?v=638621733646970000&width=800&height=auto&aspect=true"
                     paragraph="Curso de Design"
                     heading="Intermediário"
-                    to="/curso/:id"
+                    to="/professor/25"
                     />
                     <Card
                     imageSrc="https://itec.net.br/projeto2018/wp-content/uploads/2018/02/planejar-palestra-marketing-e-vendas.jpg"
                     paragraph="Curso de Marketing"
                     heading="Avançado"
-                    to="/curso/:id"
+                    to="/professor/36"
                     />
                 </div>
             </div>

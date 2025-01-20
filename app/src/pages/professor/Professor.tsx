@@ -1,8 +1,7 @@
 import Layout from "../../layout/Layout";
 import ThreeCards from "../../components/threeCards/ThreeCards";
 
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import { professores } from "../../data/corpoDocenteData";
 import { categoriesCards } from "../../data/cursosData";
