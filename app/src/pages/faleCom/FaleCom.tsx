@@ -38,7 +38,7 @@ export default function FaleCom() {
       <div className="flex justify-between p-[60px_100px] border-t border-[#f8f8f8]">
         <div className="flex items-center gap-5">
           <img
-            src="https://farolti.com.br/site/wp-content/uploads/2020/09/Sem-Título-1.png"
+            src="https://cdn-icons-png.flaticon.com/512/1028/1028931.png"
             alt="suporte"
             className="w-[100px] h-[100px] object-contain"
           />

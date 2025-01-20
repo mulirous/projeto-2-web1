@@ -79,7 +79,7 @@ export default function Grade() {
           />
           <Article
             heading="Marketing Digital"
-            imageSrc="https://midia.market/wp-content/uploads/2023/11/iStock-1443560890-1-1.jpg"
+            imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZa19Z1SihDgmpKaWitBJuxbV_aDydUFqhjw&s"
             owner="Juliana Santos"
             ownerImage="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/professora-lu-renascer.jpg?w=1200&h=900&crop=1"
             paragraph="Dominando estratégias e análise de marketing online"
